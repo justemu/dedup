@@ -59,6 +59,8 @@ def compare(priority, x, y):
               "l":3, "L":-3,
              "n": 4, "N": -4 }
     for p in priority:
+        if p not in p_dict:
+            continue
         res = compare_n(p_dict[p], x, y)
         if res == None:
             continue
